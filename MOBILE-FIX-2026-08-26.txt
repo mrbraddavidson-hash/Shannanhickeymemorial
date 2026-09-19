@@ -1,0 +1,15 @@
+SHANNAN HICKEY MEMORIAL - MOBILE HOMEPAGE FIX
+Date: 2026-08-26
+
+Issue:
+On mobile, the homepage was constrained to a single 100svh grid while the mobile footer is much taller than desktop. This could squeeze/clip the hero so content appeared underneath the sticky main menu.
+
+Fix:
+- Mobile homepage now scrolls normally.
+- Hero gets a minimum height of viewport minus the 90px mobile header.
+- Homepage content remains in normal document flow below the sticky header.
+- Desktop layout is unchanged.
+- Secure form code/settings are unchanged.
+
+Deploy:
+Double-click UPDATE-CLOUDFLARE.bat from this folder.

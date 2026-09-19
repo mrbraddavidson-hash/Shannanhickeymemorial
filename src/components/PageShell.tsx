@@ -1,0 +1,2 @@
+import { Header } from "./Header";import { SiteFooter } from "./SiteFooter";
+export function PageShell({eyebrow,title,intro,children,compact=false}:{eyebrow:string;title:string;intro:string;children:React.ReactNode;compact?:boolean}){return <main className={`redesign${compact?" tournament-page":""}`}><Header/><section className="page-hero"><div className="new-wrap"><p className="overline pale">{eyebrow}</p><h1>{title}</h1><p>{intro}</p></div></section><section className="page-content"><div className="new-wrap">{children}</div></section><SiteFooter/></main>}

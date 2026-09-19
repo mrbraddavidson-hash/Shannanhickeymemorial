@@ -1,0 +1,81 @@
+SHANNAN HICKEY MEMORIAL — PROJECT HANDOFF
+=========================================
+Snapshot date: 2026-08-26
+
+LIVE SITE
+---------
+Primary URL: https://shannanhickeymemorial.com
+Cloudflare Worker: shannan-hickey-memorial
+Production Worker URL: shannan-hickey-memorial.mrbraddavidson.workers.dev
+Hosting: Cloudflare Workers
+Status at handoff: live and working
+
+DOMAIN / WWW
+------------
+- shannanhickeymemorial.com is attached directly to the production Worker.
+- www.shannanhickeymemorial.com is a redirect-only hostname.
+- Correct DNS for www: proxied A record -> 192.0.2.1 (reserved placeholder address).
+- Correct Redirect Rule: https://www.shannanhickeymemorial.com/* -> https://shannanhickeymemorial.com/${1}
+- Status code: 301; Preserve query string: ON.
+- The older broken rule named "www to root" should remain disabled/deleted.
+- HTTPS/SSL is managed by Cloudflare.
+- See WWW-REDIRECT-FIX-2026-08-26.txt for the exact configuration.
+
+PUBLIC EMAIL
+------------
+Public organizer address: joe@shannanhickeymemorial.com
+Cloudflare Email Routing is enabled for the domain.
+joe@shannanhickeymemorial.com currently forwards to a verified TEMPORARY destination inbox.
+The private destination value is intentionally NOT stored in this package.
+
+NEXT EMAIL TASK
+---------------
+When Joe can verify his Gmail:
+1. Cloudflare -> Email Routing -> Destination Addresses.
+2. Add Joe's Gmail and complete Cloudflare verification from Joe's inbox.
+3. Edit the joe@shannanhickeymemorial.com routing rule and change the destination to Joe's verified Gmail.
+4. Update the Worker FORM_RECIPIENT secret by running SETUP-SECURE-FORMS.bat and entering the existing Turnstile values plus Joe's verified Gmail, OR run:
+   npx wrangler secret put FORM_RECIPIENT --config dist/server/wrangler.json
+5. Send a real contact-form test.
+
+SECURE FORM
+-----------
+The live contact/registration form has been tested successfully.
+Protections included:
+- Cloudflare Turnstile with server-side Siteverify validation
+- Same-origin POST protection
+- JSON-only API input
+- request/body size limits
+- server-side field validation
+- HTML escaping in email output
+- hidden honeypot field
+- Worker rate limiting
+- private Worker secrets
+- no form data stored in D1, KV, R2, or a database
+- submitted personal data is not intentionally logged
+
+CLOUDFLARE WORKER SECRETS
+-------------------------
+The following secret NAMES exist in Cloudflare. Their values are NOT in this ZIP:
+- TURNSTILE_SITE_KEY
+- TURNSTILE_SECRET_KEY
+- FORM_RECIPIENT
+
+TURNSTILE
+---------
+Turnstile is configured for the memorial website and the live form is working.
+The secret key must remain only in Cloudflare Worker secrets.
+Never put the Turnstile secret in app/, public/, worker source, Git, screenshots, or documentation.
+
+FORM EMAIL DELIVERY
+-------------------
+The Worker uses a Cloudflare send_email binding named EMAIL and sends only to the verified FORM_RECIPIENT destination.
+The fixed automated form sender in the current code is:
+forms@shannanhickeymemorial.com
+The visitor's submitted email is used as Reply-To.
+The public organizer email remains:
+joe@shannanhickeymemorial.com
+
+IMPORTANT
+---------
+Do not include Cloudflare secret values, Gmail passwords, account credentials, API keys, or private inbox values in this project package.

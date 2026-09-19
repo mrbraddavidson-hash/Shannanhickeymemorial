@@ -1,0 +1,18 @@
+SHANNAN HICKEY MEMORIAL — SECURITY TEST RESULT
+Snapshot: 2026-08-26
+
+Command:
+node --test tests/form-security.test.mjs
+
+Result:
+6 tests passed
+0 tests failed
+
+Covered:
+- field validation/normalization
+- malformed form rejection
+- HTML escaping
+- same-origin secure submission
+- safe From / Reply-To behavior
+- cross-origin rejection
+- rate limiting

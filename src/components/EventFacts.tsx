@@ -1,0 +1,2 @@
+import { event } from "../data/event";
+export function EventFacts(){ const facts=[["AUG 29","Saturday, 2026"],[event.venue.name,event.venue.city],[`$${event.pricing.golfer}`,"Per Golfer"],[`$${event.pricing.team}`,"Per Team"],["18 HOLES",event.format]]; return <section className="facts"><div className="container facts-grid">{facts.map(([a,b])=><div key={a}><strong>{a}</strong><span>{b}</span></div>)}</div></section> }

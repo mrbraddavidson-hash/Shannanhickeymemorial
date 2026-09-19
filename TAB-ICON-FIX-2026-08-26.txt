@@ -1,0 +1,19 @@
+SHANNAN HICKEY MEMORIAL — TAB ICON UPDATE
+Date: 2026-08-26
+
+Changed the browser tab/favicon from the default blue app icon to the existing Shannan Hickey memorial wings logo.
+
+Files added/updated:
+- public/favicon.ico
+- public/favicon.svg
+- public/shannan-wings-favicon.png
+- public/apple-touch-icon.png
+- app/layout.tsx metadata icon references
+
+This package also includes the prior mobile homepage header-spacing fix and the secure Cloudflare form setup.
+
+Deployment:
+Double-click UPDATE-CLOUDFLARE.bat from this folder.
+
+Browser favicon caching:
+After deployment, hard-refresh the site. If the old favicon remains in an already-open tab, close that tab and reopen shannanhickeymemorial.com. Browsers may cache favicons separately from page content.

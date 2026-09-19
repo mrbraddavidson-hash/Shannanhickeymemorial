@@ -1,0 +1,70 @@
+SHANNAN HICKEY MEMORIAL — SECURE FORM SETUP
+Domain: shannanhickeymemorial.com
+
+CURRENT LIVE STATE
+------------------
+The production form is already working. See PROJECT-STATUS.txt before changing anything.
+
+HOW THE FORM WORKS
+------------------
+Browser -> same-origin /api/contact -> Cloudflare Worker
+       -> server-side Turnstile verification
+       -> server-side validation/rate limit/honeypot
+       -> Cloudflare EMAIL binding
+       -> verified FORM_RECIPIENT destination inbox
+
+The browser never receives the Turnstile secret or destination inbox.
+
+PUBLIC EMAIL
+------------
+joe@shannanhickeymemorial.com is the public organizer address and is managed by Cloudflare Email Routing.
+
+FORM SENDER
+-----------
+Automated form mail is sent server-side as:
+forms@shannanhickeymemorial.com
+
+The visitor's submitted email becomes Reply-To.
+
+EMAIL ROUTING — FREE PLAN
+-------------------------
+Cloudflare Email Routing is used for joe@shannanhickeymemorial.com.
+The Worker send_email binding is restricted to a verified destination address.
+The separate Cloudflare Email Sending (Beta) paid product is NOT required for this setup.
+
+TURNSTILE
+---------
+Create/use a Managed Turnstile widget for:
+- shannanhickeymemorial.com
+- www.shannanhickeymemorial.com
+
+Keep the Secret Key private.
+
+WORKER SECRETS
+--------------
+Run SETUP-SECURE-FORMS.bat after a production build/deploy.
+It prompts through Wrangler for:
+- TURNSTILE_SITE_KEY
+- TURNSTILE_SECRET_KEY
+- FORM_RECIPIENT
+
+Values are stored in Cloudflare, not in local project files.
+
+CHANGE DESTINATION TO JOE LATER
+-------------------------------
+1. Verify Joe's Gmail under Cloudflare Email Routing -> Destination Addresses.
+2. Change the joe@ routing rule to Joe's verified Gmail.
+3. Build once if dist/server/wrangler.json is not present:
+   npm ci
+   npm run build
+4. Run:
+   npx wrangler secret put FORM_RECIPIENT --config dist/server/wrangler.json
+5. Enter Joe's verified Gmail at Wrangler's hidden prompt.
+6. Test https://shannanhickeymemorial.com/contact
+
+DO NOT
+------
+- Do not store secrets in this ZIP.
+- Do not paste the Turnstile secret into browser code.
+- Do not expose the private destination inbox on the website.
+- Do not unlock/remove Cloudflare-managed Email Routing DNS records without a deliberate email migration plan.

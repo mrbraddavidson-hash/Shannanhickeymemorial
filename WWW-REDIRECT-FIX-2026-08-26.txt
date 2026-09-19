@@ -1,0 +1,43 @@
+SHANNAN HICKEY MEMORIAL — WWW REDIRECT FIX
+===========================================
+Date: 2026-08-26
+
+PRIMARY SITE
+------------
+https://shannanhickeymemorial.com
+
+CORRECT WWW DNS SETUP
+---------------------
+The www hostname is used only for a Cloudflare redirect.
+Use this DNS record:
+
+Type: A
+Name: www
+IPv4 address: 192.0.2.1
+Proxy status: Proxied (orange cloud)
+TTL: Auto
+
+Do NOT point www at the root Worker with a CNAME for this redirect-only setup.
+That configuration caused a redirect/host-timeout problem during setup.
+
+CORRECT REDIRECT RULE
+---------------------
+Cloudflare -> Rules -> Redirect Rules -> Single Redirect
+
+Rule name: WWW to main domain
+Match: Wildcard pattern
+Request URL:
+https://www.shannanhickeymemorial.com/*
+
+Target URL:
+https://shannanhickeymemorial.com/${1}
+
+Status code: 301 Permanent Redirect
+Preserve query string: ON
+
+IMPORTANT
+---------
+- Disable/delete the older broken rule named "www to root".
+- Keep only one active www -> non-www redirect rule.
+- Test in an Incognito/Private window after changes because browsers may cache 301 redirects.
+- The project code itself does not redirect the root domain back to www.

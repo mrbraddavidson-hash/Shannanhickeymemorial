@@ -1,0 +1,147 @@
+SHANNAN HICKEY MEMORIAL
+Cloudflare deployment guide
+Domain: shannanhickeymemorial.com
+
+RECOMMENDED LIVE ADDRESS
+https://shannanhickeymemorial.com
+
+Also support:
+https://www.shannanhickeymemorial.com
+Redirect www to the main non-www address.
+
+============================================================
+A. BEFORE DEPLOYING
+============================================================
+
+1. You need a Cloudflare account.
+2. Add shannanhickeymemorial.com to Cloudflare if it is not already there.
+3. If the domain is registered somewhere other than Cloudflare Registrar,
+   Cloudflare will give you two nameservers. Change the nameservers at your
+   domain registrar to the two Cloudflare nameservers.
+4. Wait until Cloudflare shows the domain/zone as ACTIVE.
+
+Do not delete existing MX/email DNS records if the domain is being used for email.
+
+============================================================
+B. FIRST DEPLOYMENT FROM WINDOWS
+============================================================
+
+1. Extract this ZIP to a normal folder.
+2. Open the extracted folder.
+3. Double-click DEPLOY-CLOUDFLARE.bat
+4. The first run installs dependencies and opens a Cloudflare login page.
+5. Approve the Cloudflare login.
+6. The script builds and deploys the site.
+7. Wrangler will print a temporary *.workers.dev URL.
+8. Open that URL and verify the site BEFORE attaching the domain.
+
+Requirements:
+- Windows 10/11
+- Node.js 22.13 or newer
+- Internet connection
+
+============================================================
+C. ATTACH shannanhickeymemorial.com
+============================================================
+
+After the temporary Workers URL looks correct:
+
+1. Open Cloudflare Dashboard.
+2. Go to Workers & Pages.
+3. Select the newly deployed Shannan Hickey Memorial Worker.
+4. Open Settings > Domains & Routes.
+   (Cloudflare may also show this in the newer Domains tab.)
+5. Choose Add > Custom Domain.
+6. Enter:
+
+   shannanhickeymemorial.com
+
+7. Choose Add Custom Domain.
+
+Cloudflare creates the necessary DNS record and SSL certificate automatically.
+Do not create a separate A record for the Worker unless Cloudflare specifically
+asks you to.
+
+============================================================
+D. WWW ADDRESS
+============================================================
+
+Main address:
+https://shannanhickeymemorial.com
+
+The www hostname is redirect-only. Use this DNS record:
+
+Type: A
+Name: www
+IPv4: 192.0.2.1
+Proxy status: Proxied (orange cloud)
+TTL: Auto
+
+Then create ONE Cloudflare Single Redirect:
+
+Rule name: WWW to main domain
+Match: Wildcard pattern
+Request URL:
+https://www.shannanhickeymemorial.com/*
+
+Target URL:
+https://shannanhickeymemorial.com/${1}
+
+Status: 301 Permanent Redirect
+Preserve query string: ON
+
+Do not keep the older broken rule named "www to root" active.
+Do not use a CNAME from www to the root Worker for this redirect-only setup.
+Test in a private/incognito window after changing redirect rules.
+
+============================================================
+E. FUTURE WEBSITE UPDATES
+============================================================
+
+After website files have been changed:
+
+1. Put the updated project files in this same project folder.
+2. Double-click UPDATE-CLOUDFLARE.bat
+3. It rebuilds and deploys the new version.
+
+You do NOT need to reconnect the domain after each update.
+
+============================================================
+F. IMPORTANT FILES
+============================================================
+
+Website source:
+app/
+src/
+public/
+
+All memorial photographs and logos are under public/.
+Do not remove public/images or public/logos.
+
+Production build output is generated into:
+dist/
+
+The deploy script uses:
+dist/server/wrangler.json
+
+============================================================
+G. DOMAIN / SSL
+============================================================
+
+Cloudflare Custom Domains automatically provision the DNS record and certificate
+when the domain is active on Cloudflare.
+
+Use Full/Strict SSL where applicable. The Worker itself is served by Cloudflare,
+so there is no separate web-server SSL certificate to purchase or install.
+
+============================================================
+H. SECURE CONTACT / REGISTRATION FORM
+============================================================
+
+This build includes a real server-side secure form implementation.
+After the Worker is deployed, follow SECURE-FORMS-SETUP.txt and run:
+
+SETUP-SECURE-FORMS.bat
+
+For this production snapshot, Turnstile, Email Routing and Worker secrets have already been configured and a live form test succeeded.
+See PROJECT-STATUS.txt before changing the email setup.
