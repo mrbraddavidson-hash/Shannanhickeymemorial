@@ -39,6 +39,7 @@ const gallerySecondAnnualPhotos = [
 ] as const;
 
 const galleryFirstAnnualPhotos = [
+  { src: "/images/three-oaks/cheque.webp", alt: "Cheque presentation supporting Three Oaks Foundation at the 1st Annual Shannan Hickey Memorial Golf Tournament", label: "1st Annual cheque" },
   { src: "/images/tournament/1st-annual/facebook-2025/01_shannan_2025_page_122130827.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
   { src: "/images/tournament/1st-annual/facebook-2025/02_shannan_2025_page_122128686560.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
   { src: "/images/tournament/1st-annual/facebook-2025/03_shannan_2025_page_122128686512.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
@@ -95,10 +96,6 @@ export default function Gallery(){
       </section>
       <section className="gallery-year-group" aria-labelledby="annual-one-heading">
         <div className="gallery-section-heading"><p className="overline dark">1st Annual</p><h2 id="annual-one-heading">2025 Photos</h2><p>Shannan Hickey Memorial Golf Tournament photo archive from the first annual event.</p></div>
-        <figure className="gallery-feature">
-          <img src="/images/three-oaks/cheque.webp" alt="Cheque presentation supporting Three Oaks Foundation at the 1st Annual Shannan Hickey Memorial Golf Tournament"/>
-          <figcaption><p className="overline dark">1st Annual · Community in action</p><h2>Supporting Three Oaks Foundation</h2><p>A proud moment from the first annual tournament.</p></figcaption>
-        </figure>
         <div className="page-gallery" aria-label="1st Annual 2025 Shannan Hickey Memorial tournament photos">
           {galleryFirstAnnualPhotos.map((photo, index) => <figure className={`gallery-photo gallery-photo-${index + 1}`} key={photo.src}>
             <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open larger photo: ${photo.label}`}>
