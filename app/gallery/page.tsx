@@ -67,7 +67,7 @@ const galleryFirstAnnualPhotos = [
   { src: "/images/tournament/1st-annual/facebook-2025/25_joe_2025_album_15_fbid_10161296209826630.jpg", alt: "Golfer taking a shot from the tee", label: "Tee time" },
   { src: "/images/tournament/1st-annual/facebook-2025/26_joe_2025_album_16_fbid_10161296209971630.jpg", alt: "Golfer playing on the course", label: "On the green" },
   { src: "/images/tournament/1st-annual/facebook-2025/27_joe_2025_album_17_fbid_10161296210091630.jpg", alt: "Golfers walking together near the green", label: "Golfers together" },
-  { src: "/images/tournament/1st-annual/facebook-2025/28_joe_2025_album_18_fbid_10161296210246630.jpg", alt: "Women golfers posing with their carts", label: "Women's foursome" },
+  { src: "/images/tournament/1st-annual/facebook-2025/28_joe_2025_album_18_fbid_10161296210246630.jpg", alt: "Golfers posing together with their carts", label: "Tournament group" },
   { src: "/images/tournament/1st-annual/facebook-2025/29_joe_2025_album_19_fbid_10161296210351630.jpg", alt: "Tournament group posing together on the green", label: "Team photo" },
   { src: "/images/tournament/1st-annual/facebook-2025/30_joe_2025_album_20_fbid_10161296210611630.jpg", alt: "Tournament foursome posing on the course", label: "Tournament foursome" },
   { src: "/images/tournament/1st-annual/facebook-2025/31_joe_2025_album_21_fbid_10161296210761630.jpg", alt: "Tournament volunteers talking under the pavilion", label: "Community conversation" },
