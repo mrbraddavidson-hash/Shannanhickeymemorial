@@ -94,7 +94,7 @@ export default function Gallery(){
         </div>
       </section>
       <section className="gallery-year-group" aria-labelledby="annual-one-heading">
-        <div className="gallery-section-heading"><p className="overline dark">1st Annual</p><h2 id="annual-one-heading">2025</h2><p>Photos from the first Shannan Hickey Memorial Golf Tournament.</p></div>
+        <div className="gallery-section-heading"><p className="overline dark">1st Annual</p><h2 id="annual-one-heading">2025 Photos</h2><p>Shannan Hickey Memorial Golf Tournament photo archive from the first annual event.</p></div>
         <figure className="gallery-feature">
           <img src="/images/three-oaks/cheque.webp" alt="Cheque presentation supporting Three Oaks Foundation at the 1st Annual Shannan Hickey Memorial Golf Tournament"/>
           <figcaption><p className="overline dark">1st Annual · Community in action</p><h2>Supporting Three Oaks Foundation</h2><p>A proud moment from the first annual tournament.</p></figcaption>
