@@ -24,6 +24,18 @@ const gallerySecondAnnualPhotos = [
   { src: "/images/tournament/2nd-annual/717.jpg", alt: "Attendees sharing a moment during the tournament", label: "Social moments" },
   { src: "/images/tournament/2nd-annual/716.jpg", alt: "Tournament guests gathered together", label: "Community" },
   { src: "/images/tournament/2nd-annual/714.jpg", alt: "Guests gathered at the tournament welcome area", label: "Welcome area" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/01_joe_announcement.jpg", alt: "Joe McCaw announcement for the Shannan Hickey Memorial Golf Tournament", label: "Event announcement" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/02_shannan_event_photo_122174217.jpg", alt: "Official Shannan Hickey Memorial Golf Tournament flyer for August 29, 2026 at NINE Golf", label: "Official flyer" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/04_shannan_event_photo_122171956.jpg", alt: "Save-the-date graphic for the Shannan Hickey Memorial Golf Tournament", label: "Save the date" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/05_shannan_event_photo_122170609.jpg", alt: "Golf invitation graphic for the Shannan Hickey Memorial Golf Tournament", label: "Golf invitation" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/06_joe_prizeboard_01.jpg", alt: "Golf tournament prize board with donated passes and prizes", label: "Prize board" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/07_joe_prizeboard_02.jpg", alt: "Second golf tournament prize board with donated passes and prizes", label: "Prize board" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/08_joe_prizeboard_03.jpg", alt: "Third golf tournament prize board with donated passes and prizes", label: "Prize board" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/09_joe_prizeboard_04.jpg", alt: "Fourth golf tournament prize board with donated passes and prizes", label: "Prize board" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/10_joe_recap_01.jpg", alt: "Three Oaks Foundation fundraising recap from the memorial golf tournament", label: "$21,000 fundraiser" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/11_joe_recap_02.jpg", alt: "Post-event Shannan Hickey Memorial Golf Tournament recap", label: "Tournament recap" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/12_joe_recap_03.jpg", alt: "Second post-event Shannan Hickey Memorial Golf Tournament recap", label: "Tournament recap" },
+  { src: "/images/tournament/2nd-annual/facebook-2026/13_melinda_21000_graphic.jpg", alt: "Three Oaks Foundation $21,000 fundraising graphic", label: "Three Oaks recap" },
 ] as const;
 
 export default function Gallery(){
