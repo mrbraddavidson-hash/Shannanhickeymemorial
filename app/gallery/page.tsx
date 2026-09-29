@@ -22,6 +22,11 @@ const gallerySecondAnnualPhotos = [
   { src: "/images/tournament/2nd-annual/723.jpg", alt: "Volunteer grilling burgers during tournament day", label: "Grill team" },
   { src: "/images/tournament/2nd-annual/722.jpg", alt: "Burgers being prepared for the tournament meal", label: "Tournament lunch" },
   { src: "/images/tournament/2nd-annual/721.jpg", alt: "Attendees gathered near the tournament prize table", label: "Community" },
+  { src: "/images/tournament/2nd-annual/719.jpg", alt: "Memorial portrait displayed at the tournament", label: "Memorial portrait" },
+  { src: "/images/tournament/2nd-annual/720.jpg", alt: "Guests near the tournament prize table", label: "Prize table" },
+  { src: "/images/tournament/2nd-annual/717.jpg", alt: "Attendees sharing a moment during the tournament", label: "Social moments" },
+  { src: "/images/tournament/2nd-annual/716.jpg", alt: "Tournament guests gathered together", label: "Community" },
+  { src: "/images/tournament/2nd-annual/714.jpg", alt: "Guests gathered at the tournament welcome area", label: "Welcome area" },
 ] as const;
 
 export default function Gallery(){
