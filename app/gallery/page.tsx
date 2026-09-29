@@ -14,6 +14,7 @@ const gallerySecondAnnualPhotos = [
   { src: "/images/tournament/2nd-annual/735.jpg", alt: "Three Oaks Foundation information tent at the golf tournament", label: "Three Oaks Foundation" },
   { src: "/images/tournament/2nd-annual/732.jpg", alt: "J² Squared Roofing sponsor board for the second annual tournament", label: "Sponsor recognition" },
   { src: "/images/tournament/2nd-annual/731.jpg", alt: "Tournament prize item prepared for guests", label: "Tournament prizes" },
+  { src: "/images/tournament/2nd-annual/727.jpg", alt: "Handwritten prize card board listing donated tournament prizes", label: "Prize card" },
   { src: "/images/tournament/2nd-annual/730.jpg", alt: "Guests browsing the tournament prize table", label: "Prize table" },
   { src: "/images/tournament/2nd-annual/729.jpg", alt: "Raffle prizes and donated items arranged for the tournament", label: "Raffle prizes" },
   { src: "/images/tournament/2nd-annual/723.jpg", alt: "Volunteer grilling burgers during tournament day", label: "Grill team" },
