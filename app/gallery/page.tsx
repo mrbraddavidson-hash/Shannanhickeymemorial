@@ -27,7 +27,6 @@ const gallerySecondAnnualPhotos = [
   { src: "/images/tournament/2nd-annual/facebook-2026/01_joe_announcement.jpg", alt: "Joe McCaw announcement for the Shannan Hickey Memorial Golf Tournament", label: "Event announcement" },
   { src: "/images/tournament/2nd-annual/facebook-2026/02_shannan_event_photo_122174217.jpg", alt: "Official Shannan Hickey Memorial Golf Tournament flyer for August 29, 2026 at NINE Golf", label: "Official flyer" },
   { src: "/images/tournament/2nd-annual/facebook-2026/04_shannan_event_photo_122171956.jpg", alt: "Save-the-date graphic for the Shannan Hickey Memorial Golf Tournament", label: "Save the date" },
-  { src: "/images/tournament/2nd-annual/facebook-2026/05_shannan_event_photo_122170609.jpg", alt: "Golf invitation graphic for the Shannan Hickey Memorial Golf Tournament", label: "Golf invitation" },
   { src: "/images/tournament/2nd-annual/facebook-2026/06_joe_prizeboard_01.jpg", alt: "Golf tournament prize board with donated passes and prizes", label: "Prize board" },
   { src: "/images/tournament/2nd-annual/facebook-2026/07_joe_prizeboard_02.jpg", alt: "Second golf tournament prize board with donated passes and prizes", label: "Prize board" },
   { src: "/images/tournament/2nd-annual/facebook-2026/08_joe_prizeboard_03.jpg", alt: "Third golf tournament prize board with donated passes and prizes", label: "Prize board" },
