@@ -1,7 +1,8 @@
 export const event = {
   name: "Shannan Hickey Memorial Golf Tournament",
-  edition: "2nd Annual",
-  date: "Saturday, August 29, 2026",
+  edition: "3rd Annual",
+  date: "Date TBD",
+  dateTbd: true,
   venue: { name: "NINE Golf", address: "1915 Old Highway #2", city: "Belleville, Ontario K8N 4Z2" },
   pricing: { golfer: 125, team: 500 },
   format: "18-hole best-ball scramble",
@@ -19,6 +20,6 @@ export const event = {
   donationUrl: "https://threeoaks.ca/donate/",
 } as const;
 
-// This production profile is for the completed August 29, 2026 event. Keep
-// the state explicit so edge-runtime clock differences cannot reopen signup.
-export const eventHasPassed = true;
+// The next tournament date has not been announced. Keep the state explicit so
+// edge-runtime clock differences cannot close the interest form prematurely.
+export const eventHasPassed = false;

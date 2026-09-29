@@ -1,6 +1,6 @@
 # Shannan Hickey Memorial Website
 
-Production project for **https://shannanhickeymemorial.com** on Cloudflare Workers.
+Production project for **https://shannanhickeymemorial.com** on Cloudflare Workers. The current site presents the 3rd Annual tournament with the event date marked TBD.
 
 ## Current production state
 

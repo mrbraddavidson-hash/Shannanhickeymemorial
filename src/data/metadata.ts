@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteOrigin = "https://shannanhickeymemorial.com";
-const defaultImage = "/images/tournament/poster.jpg";
+const defaultImage = "/logos/poster-wings-transparent.png";
 
 export function pageMetadata(path: string, title: string, description: string): Metadata {
   const url = new URL(path, siteOrigin).toString();
@@ -16,7 +16,7 @@ export function pageMetadata(path: string, title: string, description: string): 
       type: "website",
       siteName: "Shannan Hickey Memorial Golf Tournament",
       locale: "en_CA",
-      images: [{ url: defaultImage, alt: "Shannan Hickey Memorial Golf Tournament poster" }],
+      images: [{ url: defaultImage, alt: "Shannan Hickey Memorial wings logo" }],
     },
     twitter: {
       card: "summary_large_image",
