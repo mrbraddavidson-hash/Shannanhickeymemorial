@@ -38,6 +38,47 @@ const gallerySecondAnnualPhotos = [
   { src: "/images/tournament/2nd-annual/facebook-2026/13_melinda_21000_graphic.jpg", alt: "Three Oaks Foundation $21,000 fundraising graphic", label: "Three Oaks recap" },
 ] as const;
 
+const galleryFirstAnnualPhotos = [
+  { src: "/images/tournament/1st-annual/facebook-2025/01_shannan_2025_page_122130827.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/02_shannan_2025_page_122128686560.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/03_shannan_2025_page_122128686512.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/04_shannan_2025_page_122128686452.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/05_shannan_2025_page_122128686404.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/06_shannan_2025_page_122128686350.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/07_shannan_2025_page_122127720.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/08_shannan_2025_page_122094787.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/09_shannan_2025_page_122094773.png", alt: "2025 Shannan Hickey Memorial Golf Tournament photo from the official memorial page", label: "Official page photo" },
+  { src: "/images/tournament/1st-annual/facebook-2025/10_joe_2025_prizeboard.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament prize board", label: "Prize board" },
+  { src: "/images/tournament/1st-annual/facebook-2025/11_joe_2025_album_01_fbid_10161296207146630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 1", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/12_joe_2025_album_02_fbid_10161296207316630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 2", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/13_joe_2025_album_03_fbid_10161296207611630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 3", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/14_joe_2025_album_04_fbid_10161296207996630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 4", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/15_joe_2025_album_05_fbid_10161296208126630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 5", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/16_joe_2025_album_06_fbid_10161296208316630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 6", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/17_joe_2025_album_07_fbid_10161296208526630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 7", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/18_joe_2025_album_08_fbid_10161296208851630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 8", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/19_joe_2025_album_09_fbid_10161296208961630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 9", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/20_joe_2025_album_10_fbid_10161296209096630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 10", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/21_joe_2025_album_11_fbid_10161296209206630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 11", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/22_joe_2025_album_12_fbid_10161296209386630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 12", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/23_joe_2025_album_13_fbid_10161296209516630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 13", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/24_joe_2025_album_14_fbid_10161296209681630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 14", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/25_joe_2025_album_15_fbid_10161296209826630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 15", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/26_joe_2025_album_16_fbid_10161296209971630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 16", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/27_joe_2025_album_17_fbid_10161296210091630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 17", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/28_joe_2025_album_18_fbid_10161296210246630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 18", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/29_joe_2025_album_19_fbid_10161296210351630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 19", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/30_joe_2025_album_20_fbid_10161296210611630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 20", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/31_joe_2025_album_21_fbid_10161296210761630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 21", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/32_joe_2025_album_22_fbid_10161296210941630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 22", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/33_joe_2025_album_23_fbid_10161296211181630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 23", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/34_joe_2025_album_24_fbid_10161296211346630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 24", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/35_joe_2025_album_25_fbid_10161296211516630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 25", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/36_joe_2025_album_26_fbid_10161296211631630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 26", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/37_joe_2025_album_27_fbid_10161296211756630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 27", label: "Tournament album" },
+  { src: "/images/tournament/1st-annual/facebook-2025/38_joe_2025_album_28_fbid_10161296610481630.jpg", alt: "2025 Shannan Hickey Memorial Golf Tournament album photo 28", label: "Tournament album" },
+] as const;
+
 export default function Gallery(){
   return <PageShell eyebrow="Tournament memories" title="Good people. Great days." intro="Teams, sponsors, awards, and community moments from the Shannan Hickey Memorial Golf Tournament.">
     <div className="gallery-page">
@@ -53,11 +94,19 @@ export default function Gallery(){
         </div>
       </section>
       <section className="gallery-year-group" aria-labelledby="annual-one-heading">
-        <div className="gallery-section-heading"><p className="overline dark">Gallery archive</p><h2 id="annual-one-heading">1st Annual</h2><p>This photo is from the first Shannan Hickey Memorial Golf Tournament.</p></div>
+        <div className="gallery-section-heading"><p className="overline dark">1st Annual</p><h2 id="annual-one-heading">2025</h2><p>Photos from the first Shannan Hickey Memorial Golf Tournament.</p></div>
         <figure className="gallery-feature">
           <img src="/images/three-oaks/cheque.webp" alt="Cheque presentation supporting Three Oaks Foundation at the 1st Annual Shannan Hickey Memorial Golf Tournament"/>
           <figcaption><p className="overline dark">1st Annual · Community in action</p><h2>Supporting Three Oaks Foundation</h2><p>A proud moment from the first annual tournament.</p></figcaption>
         </figure>
+        <div className="page-gallery" aria-label="1st Annual 2025 Shannan Hickey Memorial tournament photos">
+          {galleryFirstAnnualPhotos.map((photo, index) => <figure className={`gallery-photo gallery-photo-${index + 1}`} key={photo.src}>
+            <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open larger photo: ${photo.label}`}>
+              <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async"/>
+            </a>
+            <figcaption><span>{String(index + 1).padStart(2, "0")}</span><strong>{photo.label}</strong></figcaption>
+          </figure>)}
+        </div>
       </section>
       <p className="gallery-note">Additional annual galleries will be added as official photos become available.</p>
     </div>
