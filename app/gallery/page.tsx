@@ -102,7 +102,6 @@ export default function Gallery(){
           </figure>)}
         </div>
       </section>
-      <p className="gallery-note">Additional annual galleries will be added as official photos become available.</p>
     </div>
   </PageShell>
 }
