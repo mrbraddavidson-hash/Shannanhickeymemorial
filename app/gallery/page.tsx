@@ -47,7 +47,6 @@ const galleryFirstAnnualPhotos = [
   { src: "/images/tournament/1st-annual/facebook-2025/05_shannan_2025_page_122128686404.jpg", alt: "Handwritten prize board listing tournament prizes 9 through 17", label: "Prize board · 9–17" },
   { src: "/images/tournament/1st-annual/facebook-2025/06_shannan_2025_page_122128686350.jpg", alt: "Handwritten prize board listing tournament prizes 1 through 8", label: "Prize board · 1–8" },
   { src: "/images/tournament/1st-annual/facebook-2025/07_shannan_2025_page_122127720.jpg", alt: "Shannan Hickey Memorial Golf Tournament poster for August 23, 2025", label: "Tournament poster" },
-  { src: "/images/tournament/1st-annual/facebook-2025/10_joe_2025_prizeboard.jpg", alt: "Handwritten Shannan Hickey Memorial Golf Tournament prize board listing prizes 1 through 7", label: "Prize board · 1–7" },
   { src: "/images/tournament/1st-annual/facebook-2025/11_joe_2025_album_01_memorial_cake_rotated.png", alt: "Memorial cake decorated for the Shannan Hickey Memorial Golf Tournament", label: "Memorial cake" },
   { src: "/images/tournament/1st-annual/facebook-2025/12_joe_2025_album_02_fbid_10161296207316630.jpg", alt: "Portrait of Shannan Hickey displayed beside a memorial cake", label: "Memorial portrait" },
   { src: "/images/tournament/1st-annual/facebook-2025/13_joe_2025_album_03_fbid_10161296207611630.jpg", alt: "Two friends posing together at the memorial golf tournament", label: "Friends together" },
