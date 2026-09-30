@@ -87,3 +87,5 @@ html:has(.home-page),body:has(.home-page){overflow:hidden}.home-page{height:100s
 .schedule-compact-heading{display:block;padding-bottom:10px;margin-bottom:12px;text-align:left}
 .schedule-compact-heading .overline{margin:0 0 6px}
 .schedule-compact h2{font-size:20px;line-height:1.15}
+.tournament-poster-image{margin:0;overflow:hidden;background:var(--deep);box-shadow:0 14px 30px #0b2d2422}
+.tournament-poster-image img{display:block;width:100%;height:auto}
