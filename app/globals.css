@@ -89,3 +89,6 @@ html:has(.home-page),body:has(.home-page){overflow:hidden}.home-page{height:100s
 .schedule-compact h2{font-size:20px;line-height:1.15}
 .tournament-poster-image{margin:0;overflow:hidden;background:var(--deep);box-shadow:0 14px 30px #0b2d2422}
 .tournament-poster-image img{display:block;width:100%;height:auto}
+.footer-bottom-new{display:flex;flex-direction:column;gap:5px}
+.footer-bottom-new .footer-ddd-link{width:max-content;color:#829b94;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transition:color .2s ease}
+.footer-bottom-new .footer-ddd-link:hover,.footer-bottom-new .footer-ddd-link:focus-visible{color:var(--lime)}
